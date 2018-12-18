@@ -1,0 +1,35 @@
+
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="w3-container w3-padding-large w3-grey"style="background:#585858" id="CartePostale">
+      <h4 ><b>Carte Postale</b></h4>
+      <form class="" action="envoye.php" method="POST">
+
+
+     <h1><b>Envoyer Une CartePostale</b></h1>
+            <label >@destinataire</label>
+            <input  type="email" name="adressDestination" id="adressDestination" required><br>
+            <label  >titre</label>
+            <input  type="text" name="titre" required><br>
+
+            <label size=20px>msg</label>
+            <input  type="text" name="msg" required><br>
+            <label size=20px>url</label>
+            <?php $url = isset($_GET['photourl']) ? $_GET['photourl'] : die(); ?>
+            <input  type="text" name="url" value=" <?php echo $url ?>" > <br>
+            <label size=20px>nom</label>
+            <input  type="text" name="nom" required><br>
+
+
+
+            <input type=submit name=action value="Load" >
+      </form>
+    </div>
+
+  </body>
+</html>

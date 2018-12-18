@@ -1,0 +1,111 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding:0;
+    margin: 0;
+    background-color:  rgba(104, 104, 104, 0.8);
+}
+
+/* form */
+form{
+    margin: 20px auto;
+    width: 500px ;
+    color:white;
+}
+input{
+    padding:10px;
+    font-size: inherit;
+
+}
+input[type="text"]{
+    display: block;
+    margin-bottom: 25px;
+    width:100%;
+    border: 2px solid gray;
+    background:  rgb(238, 194, 17);
+}
+input[type="email"]{
+    display: block;
+    margin-bottom: 25px;
+    width:100%;
+    border: 2px solid gray;
+    background:   rgb(238, 194, 17);
+}
+input[type="tel"]{
+    display: block;
+    margin-bottom: 25px;
+    width:100%;
+    border: 2px solid gray;
+    background:   rgb(238, 194, 17);
+}
+/*date*/
+input[type="date"]{
+    display: block;
+    margin-bottom: 25px;
+    width:100%;
+    border: 2px solid gray;
+    background:   rgb(238, 194, 17);
+}
+input[type="date"]::before{
+    color: #ffffff;
+    content: attr(placeholder) ": ";
+ }
+ input[type="date"]:focus::before {
+    content: "" !important;
+ }
+/*boutton submit*/
+input[type="submit"]{
+    width: 500px;
+    height: 45px;
+    border: none;
+    background:  #669966;
+    color: white;
+}
+input[type="submit"]:focus{
+    width: 500px;
+    height: 45px;
+    border: none;
+    color:  #669966;
+    background: white;
+}
+
+
+
+/*bouton reset*/
+input[type="reset"]{
+    width: 500px;
+    height: 45px;
+    border: none;
+    background:  #993366;
+    color: white;
+}
+input[type="reset"]:focus{
+    width: 500px;
+    height: 45px;
+    border: none;
+    background:  white;
+    color:#993366;
+}
+
+
+/*focus input*/
+input:focus{
+    background: white;
+}
+
+/*radio checked*/
+
+input[type="radio"]:checked + label{
+    font-weight: bold;
+    font-size: 20px;
+}
+input[type="checkbox"]:checked + label{
+    font-weight: bold;
+    font-size: 20px;
+}
+/*tetratext */
+textarea{
+    margin: 20px auto;
+    width: 500px ;
+   
+}
+

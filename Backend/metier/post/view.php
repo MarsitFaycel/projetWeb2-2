@@ -28,5 +28,5 @@ $src=$file_path.$row['Photo_url'];
 echo "<img src=".$src.">  <br>";
 echo $src;
 }
- src=http://localhost/projetWeb/Backend/metier/post/uploads/Screenshot%20from%202018-11-28%2020-46-43.png>  <br>";
+ 
 ?>

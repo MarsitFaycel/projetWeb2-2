@@ -1,6 +1,6 @@
 <?php
     header('Access-Control-Allow-Origin: *');
-   
+
     include_once '../../config/database.php';
     include_once '../../model/photo.php';
 
@@ -32,10 +32,10 @@
                 'Photo_id' => $Photo_id,
                 'Photo_nom ' => $Photo_nom,
                 'Photo_url' => $Photo_url,
-		'photo_date' => $photo_date,
+		            'photo_date' => $photo_date,
                 'Album_nom' => $Album_nom
 
-                
+
             );
 
 
@@ -44,10 +44,9 @@
             }    //conversion en format json
 
     echo json_encode($tableau_photo);
-        
+
     } else {
         echo json_encode(
             array('message' =>'no photos ')
         );
     }
-    
